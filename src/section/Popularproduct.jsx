@@ -2,7 +2,7 @@ import { useState } from "react";
 import PopularProductCard from "../Components/PopularProductCard";
 import { products, allproducts, originproducts } from "../constants";
 
-const PopularProducts = () => {
+const PopularProducts = ({pass}) => {
   const [first, setFirst] = useState('');
   const [listen, setListen] = useState(products);
   const [afterBtn, setAfterBtn] = useState(originproducts);
@@ -55,7 +55,7 @@ const PopularProducts = () => {
  
       <div className='mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14'>
          {listen.map((product) => (
-          <PopularProductCard key={product.name} {...product} />
+          <PopularProductCard key={product.name}   {...product}  passs={pass} />
         ))} 
       </div>
     </section>
