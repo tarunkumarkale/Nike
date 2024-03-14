@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Nav from "./Components/Nav"
 import {
   CustomerReview,
@@ -5,6 +6,7 @@ import {
   Footer,
   
   Hero,
+  Inside,
   Popularproduct,
   Services,
   Subscribe,
@@ -32,14 +34,24 @@ import {
 
 
 const App = () => {
-  return (
+
+  const[first,setfirst]=useState(false)
+
+const handlechange=()=>{
+  setfirst(pre=>!pre)
+}
+
+    return (
     <main className='relative'>
       <Nav />
       <section className='xl:padding-l wide:padding-r padding-b'>
         <Hero />
       </section>
       <section className='padding'>
-        <Popularproduct />
+{
+  first?<Inside closePopup={handlechange}/>:<Popularproduct pass={handlechange} />
+}
+    
       </section>
       <section className='padding'>
         <Superquality />
