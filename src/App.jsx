@@ -12,6 +12,9 @@ import {
   Subscribe,
   Superquality,
 } from "./section/index";
+import { allproducts } from "./constants";
+import More from "./section/More";
+
 
 
 
@@ -36,6 +39,7 @@ import {
 const App = () => {
 
   const[first,setfirst]=useState(false)
+  const[Alldetails,setAlldetails]=useState(allproducts)
 
 const handlechange=()=>{
   setfirst(pre=>!pre)
@@ -48,9 +52,11 @@ const handlechange=()=>{
         <Hero />
       </section>
       <section className='padding'>
-{
-  first?<Inside closePopup={handlechange}/>:<Popularproduct pass={handlechange} />
-}
+{/* {
+  first?<Inside closePopup={handlechange}  {...Alldetails}/>:<Popularproduct pass={handlechange}  {...Alldetails} />
+
+} */}
+                <More></More>
     
       </section>
       <section className='padding'>

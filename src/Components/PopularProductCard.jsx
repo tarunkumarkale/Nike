@@ -2,10 +2,29 @@ import { useState } from "react";
 import { star } from "../assets/icons";
 import  {Inside}  from "../section";
 
+import ViewDet from "../section/ViewDet";
+const PopularProductCard = ({ imgURL, name, price,rate,discount,passs ,productsss, onProductClick,product}) => {
+  const[firs,setfirs]=useState(false)
+  
 
-const PopularProductCard = ({ imgURL, name, price,rate,discount,passs}) => {
+const handlechange=()=>{
+  setfirs(pre=>!pre)
+  onProductClick(productsss);
+  console.log(productsss.price)
+  console.log(productsss.name)
+  console.log(productsss.rate)
+  console.log(productsss.rate)
+  
+}
+ const [first,setfirst]=useState(false)
 
+ const handleClick = () => {
+  setfirst(true)
+  // Pass the product data to the onProductClick function
  
+};
+
+
   return (
     <div className='flex flex-1 flex-col w-full max-sm:w-full'>
       <img src={imgURL} alt={name} className='w-[282px] h-[282px]' />
@@ -22,9 +41,20 @@ const PopularProductCard = ({ imgURL, name, price,rate,discount,passs}) => {
        {price}   
        &nbsp;
       
-       <button onClick={passs} >Buy now</button>
+
+
+
+        <button onClick={passs} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Buy now 
+</button> 
+
+<button onClick={handlechange}>View Details</button>
+
       </p>
    
+
+   {firs?<ViewDet  productsss={productsss}  closePopup={handlechange}   /> :null}
+ 
     </div>
   );
 };

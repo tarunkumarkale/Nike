@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 380px) {
+    .hello{
+      height: 600px; /* Adjust the width value as needed */
+    }
+  }

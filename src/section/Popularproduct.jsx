@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PopularProductCard from "../Components/PopularProductCard";
 import { products, allproducts, originproducts } from "../constants";
+import { Inside } from ".";
 
 const PopularProducts = ({pass}) => {
   const [first, setFirst] = useState('');
@@ -27,6 +28,22 @@ const PopularProducts = ({pass}) => {
     setListen(afterBtn);
     setFirst('');
   };
+
+
+
+
+// //////////////////////////////////////////
+const [clickedProduct, setClickedProduct] = useState(null);
+
+const handleProductClick = (product) => {
+
+  console.log("Clicked product:", product);
+
+ 
+  
+};
+
+////////////////////////////////////////////
 
   return (
     <section id='products' className='max-container max-sm:mt-12'>
@@ -55,8 +72,16 @@ const PopularProducts = ({pass}) => {
  
       <div className='mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14'>
          {listen.map((product) => (
-          <PopularProductCard key={product.name}   {...product}  passs={pass} />
+          <PopularProductCard key={product.name} 
+          
+         {...product} 
+           productsss={product}
+          onProductClick={handleProductClick}
+          
+           passs={pass} />
         ))} 
+
+        {clickedProduct && <PopularProductCard product={clickedProduct} />}
       </div>
     </section>
   );
