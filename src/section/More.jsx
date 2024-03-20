@@ -29,7 +29,7 @@ const More = () => {
                 <Popularproduct pass={handlechange} />
             )} */}
             {first ? Forbuy.map((Element, index) => (
-    <Inside key={index} Name={Element.Name} closePopup={handlechange}/>
+    <Inside key={index} Name={Element.Name}  Data={Element.Data}    closePopup={handlechange}/>
 )) : <Popularproduct pass={handlechange} />}
 
         </div>

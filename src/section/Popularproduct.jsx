@@ -38,7 +38,7 @@ const [clickedProduct, setClickedProduct] = useState(null);
 const handleProductClick = (product) => {
 
   console.log("Clicked product:", product);
-
+setClickedProduct(product)
  
   
 };

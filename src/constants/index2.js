@@ -5,12 +5,17 @@ import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6
 export const AllBUYDetails = [
   
     {
-        imgURL: shoe5,
-        Name: "Nike Air Jordan-10",
+        // imgURL: shoe5,
+imgURL:"https://static.nike.com/a/images/t_prod_sc/w_960,c_limit,f_auto/hvbkjjbqtse3rtkapmsb/air-jordan-10-city-series-court-green-release-date.jpg",
+        Name: "Nike Air Jordan-X Court Green",
         price: "$210.20",
         
         rate:'4.2',
-        discount:"20% off"
+        discount:"20% off",
+
+        Data:"The Air Jordan X debuted the year before MJ returned to the game to defeat Seattle in the 1996 finals. Now, 12 years after the storied franchise packed up for their new home in Oklahoma City, the Air Jordan X honours famed NBA cities, including Seattle, as part of its 'City Series' of retro colourways. Seattle is rich with hoops history, and this Air Jordan X stands out on the court. The bold, tumbled white-leather upper gives some breathing room for that shock of green and yellow on the collar and outsole.",
+        p_one:'out of stock ',
+
     },
   
   

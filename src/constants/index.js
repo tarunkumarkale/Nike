@@ -98,12 +98,20 @@ export const originproducts=[
 export const allproducts = [
   
     {
-        imgURL: shoe5,
+        // imgURL: shoe5,
+        imgURL:"https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/ucxwgb17t6nxfcjpdnpk/air-jordan-10-city-series-court-green-release-date.jpg",
         name: "Nike Air Jordan-10",
         price: "$210.20",
         
         rate:'4.2',
-        discount:"20% off"
+        discount:"20% off",
+        Data:"The Air Jordan X debuted the year before MJ returned to the game to defeat Seattle in the 1996 finals. Now, 12 years after the storied franchise packed up for their new home in Oklahoma City, the Air Jordan X honours famed NBA cities, including Seattle, as part of its 'City Series' of retro colourways. Seattle is rich with hoops history, and this Air Jordan X stands out on the court. The bold, tumbled white-leather upper gives some breathing room for that shock of green and yellow on the collar and outsole.",
+        p_three:' ⭐ 4.2 ',
+        p_one:'out of stock ',
+        p_two:' ',
+    
+        p_four:'',
+        p_five:'',
     },
   
   
@@ -112,56 +120,105 @@ export const allproducts = [
         name:"Nike air force 1",
         price:"$90.57",
         rate:'4.1',
-        discount:"20% off"
+        discount:"20% off",
+        Data: "The radiance lives on in the Nike Air Force 1 , the b-ball icon that puts a fresh spin on what you know best: crisp leather, bold colours and the perfect amount of flash to make you shine. A subtle platform gives you just the right amount of height ",
+
+  p_two:'Product details:- Foam midsole, Rubber outsole, Perforations on the toe, Colour Shown: White/White/White/White, Style: DD8959-100 ',
+        p_three:' ⭐ 4.1 ',
+        p_four:'',
+        p_five:'',
+        p_one:"In Stock" ,
     },
     {
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2fb71583-600b-4a54-8949-b8fa6878e7e7/dunk-low-shoes-654MNX.png",
         name:"Nike Dunk low",
         price:"$120.7",
         rate:'3.7',
-        discount:"20% off"
+        discount:"20% off",
+        Data: "Are you ready for your flowers? The '80s basketball icon returns with smooth leather and a floral jacquard knit to deliver rich textures and throwback hoops flair. The padded, low-cut collar keeps the classic comfort of the original while enamel rose studs remind you to celebrate yourself with every step. ",
+
+        p_two:`Product details:- Low-cut, padded collar looks sleek and feels comfortable.
+        Rubber outsole with classic hoops pivot circle adds durability, traction and heritage styleColour Shown: Sail/University Red/Chlorophyll/Sail
+        Style: FZ3775-133 `,
+              p_three:' ⭐ 3.7 ',
+              p_one:"In Stock" ,
+
+
     },
     {
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a9067ffd-077d-4879-a55d-7b08ea667f56/air-jordan-1-low-shoes-459b4T.png",
         name:"Air jordan one low",
         price:"$94.77",
         rate:'4.4',
-        discount:"20% off"
+        discount:"20% off",
+        Data: "Are you ready for your flowers? The '80s basketball icon returns with smooth leather and a floral jacquard knit to deliver rich textures and throwback hoops flair. The padded, low-cut collar keeps the classic comfort of the original while enamel rose studs remind you to celebrate yourself with every step. ",
+
+        p_two:`Product details:- Low-cut, padded collar looks sleek and feels comfortable.
+        Rubber outsole with classic hoops pivot circle adds durability, traction and heritage styleColour Shown: Sail/University Red/Chlorophyll/Sail
+        Style: FZ3775-133 `,
+              p_three:' ⭐ 4.4 ',
+              p_one:'out of stock ',
+
     },
     {
         imgURL: shoe7,
         name: "Nike Air Jordan-001",
         price: "$230.20",
         rate:'3.1',
-        discount:"20% off"
+        discount:"20% off",
+        Data: "The radiance lives on in the Nike Air Force 1 , the b-ball icon that puts a fresh spin on what you know best: crisp leather, bold colours and the perfect amount of flash to make you shine. A subtle platform gives you just the right amount of height ",
+
+        p_two:'Product details:- Foam midsole, Rubber outsole, Perforations on the toe, Colour Shown: White/White/White/White, Style: DD8959-100 ',
+              p_three:' ⭐ 4.3 ',
+              p_four:'',
+              p_five:'',
+              p_one:"In Stock" ,
     },
     {
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6f687ba8-9271-4de0-a65f-6d2632408b88/air-max-pulse-shoes-vntJKX.png",
         name:"Nike Air Max Pulse ",
         price:"$132.42",
         rate:'4.2',
-        discount:"20% off"
+        discount:"20% off",
+        Data: "Who says kids don't deserve big cushioning? Not us. Get a taste of our legendary Tuned Air technology with the Nike Air Max Plus. From the school playground to your back garden, these comfy kicks are ready to play with breathable mesh fabric up top and a durable rubber sole underfoot. Plus, wavy design lines and iconic plastic accents celebrate bold style. ",
+
+        p_two:"Product details:-Reflective design elements Not intended for use as personal protective equipment (PPE) Colour Shown: Black/White/Laser Fuchsia Style: CD0609-025",
+              p_three:' ⭐ 4.2 ',
+              p_four:'Originally designed for performance running, a Max Air unit provides lightweight cushioning that lasts.',
+              p_five:'',
+              p_one:"In Stock" ,
+
     },
     {
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b05afb11-db22-461d-b94e-49bdc316b445/revolution-6-road-running-shoes-NC0P7k.png",
         name:"Nike Revolution 6 ",
         price:"$24.56",
         rate:'3.2',
-        discount:"20% off"
+        discount:"20% off",
+        Data:"We prioritise comfort, especially for our growing athletes. Made with 20% recycled content by weight, you can take these lightweight, breathable running shoes from all-day play to any-time wear and even athletics training. Lightweight, breathable and cushioned for growing feet, the race starts now.",
+        p_two:"Product details:-Reflective design elements Not intended for use as personal protective equipment (PPE) Colour Shown: Black/White/Laser Fuchsia Style: CD0609-025",
+        p_three:' ⭐ 3.2 ',
+        p_one:"In Stock" 
+
     },
     {
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c5e4f8b4-82d6-46fa-bd41-9a5ee7d6057c/revolution-7-road-running-shoes-dC34tK.png",
         name:"Nike Revolution 7 ",
         price:"$23.54",
         rate:'3.0',
-        discount:"20% off"
+        discount:"20% off",
+        Data:"We prioritise comfort, especially for our growing athletes. Made with 20% recycled content by weight, you can take these lightweight, breathable running shoes from all-day play to any-time wear and even athletics training. Lightweight, breathable and cushioned for growing feet, the race starts now.",
+        p_two:"Product details:-Reflective design elements Not intended for use as personal protective equipment (PPE) Colour Shown: Black/White/Laser Fuchsia Style: CD0609-025",
+        p_three:' ⭐ 3.0 ',
+        p_one:'out of stock ',
     },
     {
         imgURL: shoe6,
         name: "Nike Air Jordan-100",
         price: "$220.20",
         rate:'2.9',
-        discount:"20% off"
+        discount:"20% off",
+        
     },
     {
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/85b3090c-21ce-4f29-a19f-30d26f177180/p-6000-shoes-RSlsWj.png",
@@ -169,27 +226,43 @@ export const allproducts = [
         price:"$123.2",
         rate:'3.6',
         discount:"20% off"
+        
     },
     {
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/49d6a0ba-d3c1-4d5f-b93f-b09af0c662ef/air-force-1-07-shoes-587rld.png",
         name:" Nike Air Force 1 '07 ",
         price:"$110.94",
         rate:'4.3',
-        discount:"20% off"
+        discount:"20% off",
+        Data:"  You never know where self-belief might take you. Inspired by the texture and colours of a passport, and the stamps MJ collected on his world tours, this AJ1 is a fresh reminder to dream big. Keep the included luggage tag as an adornment for your shoes (or your suitcase).",
+        p_two:"Product details:-Nike Air technology absorbs impact for cushioning with every step. Solid rubber outsole provides durability and traction. Colour Shown: Armoury Navy/Pale Ivory/Sport Red/Metallic Gold Style: FN1353-400",
+        p_three:' ⭐ 4.3 ',
+        p_one:' In Stock ',
+
     },
     {
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7231a782-35fb-4bce-b940-04748c42914c/air-jordan-1-mid-se-older-shoes-ZMGf1Z.png",
         name:"Air Jorden 1 Mid SE ",
         price:"$104.72",
         rate:'3.6',
-        discount:"20% off"
+        discount:"20% off",
+        Data:"  You never know where self-belief might take you. Inspired by the texture and colours of a passport, and the stamps MJ collected on his world tours, this AJ1 is a fresh reminder to dream big. Keep the included luggage tag as an adornment for your shoes (or your suitcase).",
+        p_two:"Product details:-Nike Air technology absorbs impact for cushioning with every step. Solid rubber outsole provides durability and traction. Colour Shown: Armoury Navy/Pale Ivory/Sport Red/Metallic Gold Style: FN1353-400",
+        p_three:' ⭐ 3.6 ',
+        p_one:'out of stock ',
+
     },
     {
         imgURL: shoe4,
         name: "Nike Air Jordan-01",
         price: "$200.20",
         rate:'4.2',
-        discount:"20% off"
+        discount:"20% off",
+        Data:" Nike Air Jordan-01 takes elements of four classic Jordans, combines them and gives you one iconic sneaker. It's an homage to Spike Lee formally introducing Hollywood and hoops in a culture moment. You get a great-looking pair of kicks with some history. What more can you ask for? Ya dig?",
+        p_two:"Product details:-Nike Air technology absorbs impact for cushioning with every step. Solid rubber outsole provides durability and traction. Colour Shown: Black/Cool Grey/Sail/Gym Red Style: FQ1759-006",
+        p_three:' ⭐ 4.2 ',
+        p_one:'out of stock ',
+
     },
   
 
@@ -198,7 +271,11 @@ export const allproducts = [
         name:"Jorden Spizike Low ",
         price:"$129.32",
         rate:'4.5',
-        discount:"20% off"
+        discount:"20% off",
+        Data:"The Spizike takes elements of four classic Jordans, combines them and gives you one iconic sneaker. It's an homage to Spike Lee formally introducing Hollywood and hoops in a culture moment. You get a great-looking pair of kicks with some history. What more can you ask for? Ya dig?",
+        p_two:"Product details:-Nike Air technology absorbs impact for cushioning with every step. Solid rubber outsole provides durability and traction. Colour Shown: Black/Cool Grey/Sail/Gym Red Style: FQ1759-006",
+        p_three:' ⭐ 4.5 ',
+        p_one:'out of stock ',
     }
 
 ];
