@@ -2,8 +2,10 @@ import { useState } from "react";
 import PopularProductCard from "../Components/PopularProductCard";
 import { products, allproducts, originproducts } from "../constants";
 import { Inside } from ".";
+import { AllBUYDetails } from "../constants/index2";
 
-const PopularProducts = ({pass}) => {
+
+const PopularProducts = ({pass,checking}) => {
   const [first, setFirst] = useState('');
   const [listen, setListen] = useState(products);
   const [afterBtn, setAfterBtn] = useState(originproducts);
@@ -21,6 +23,7 @@ const PopularProducts = ({pass}) => {
       shoesname.name.toLowerCase().includes(final.toLowerCase())
     ));
     
+    console.log(pass)
     setListen(search);
   };
 
@@ -77,7 +80,7 @@ setClickedProduct(product)
          {...product} 
            productsss={product}
           onProductClick={handleProductClick}
-          
+          checker={checking}
            passs={pass} />
         ))} 
 

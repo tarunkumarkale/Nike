@@ -3,17 +3,14 @@ import { star } from "../assets/icons";
 import  {Inside}  from "../section";
 
 import ViewDet from "../section/ViewDet";
-const PopularProductCard = ({ imgURL, name, price,rate,discount,passs ,productsss, onProductClick,product}) => {
+const PopularProductCard = ({ imgURL, name, price,rate,discount,passs,productsss, onProductClick,product,checker}) => {
   const[firs,setfirs]=useState(false)
   
 
 const handlechange=()=>{
   setfirs(pre=>!pre)
-  onProductClick(productsss);
-  console.log(productsss.price)
-  console.log(productsss.name)
-  console.log(productsss.rate)
-  console.log(productsss.rate)
+  // onProductClick(productsss);
+
   
 }
  const [first,setfirst]=useState(false)
@@ -43,12 +40,15 @@ const handlechange=()=>{
       
 
 
-
-        <button onClick={passs} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-  Buy now 
+{/* 
+        {/* <button onClick={()=>passs()} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> *
+  Buy now   
+</button>  */}
+    <button onClick={()=>passs()} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> *
+  Buy now   
 </button> 
 
-<button onClick={handlechange}>View Details</button>
+<button onClick={handlechange}  className=" mt-2 bg-slate-500 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded" >View Details</button> 
 
       </p>
    

@@ -34,19 +34,46 @@ export const products = [
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/49d6a0ba-d3c1-4d5f-b93f-b09af0c662ef/air-force-1-07-shoes-587rld.png",
         name:" Nike Air Force 1 '07 ",
         price:"$110.94",
-        rate:'4.3'
+        rate:'4.3',
+        afterDiscount:"$99.772",
+        discount:"20% off",
+        Data: "The radiance lives on in the Nike Air Force 1 , the b-ball icon that puts a fresh spin on what you know best: crisp leather, bold colours and the perfect amount of flash to make you shine. A subtle platform gives you just the right amount of height ",
+
+        p_two:`Product details:- Low-cut, padded collar looks sleek and feels comfortable.
+        Rubber outsole with classic hoops pivot circle adds durability, traction and heritage styleColour Shown: Sail/University Red/Chlorophyll/Sail
+        Style: FZ3775-133 `,
+              p_three:' ⭐ 4.3 ',
+              p_one:"In Stock" ,
     },
     {
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7231a782-35fb-4bce-b940-04748c42914c/air-jordan-1-mid-se-older-shoes-ZMGf1Z.png",
         name:"Air Jorden 1 Mid SE ",
         price:"$104.72",
-        rate:'3.6'
+        rate:'3.6',
+        afterDiscount:"$99.772",
+        discount:"20% off",
+        discount:"20% off",    Data: "Who says kids don't deserve big cushioning? Not us. Get a taste of our legendary Tuned Air technology with the Nike Air Jordan. From the school playground to your back garden, these comfy kicks are ready to play with breathable mesh fabric up top and a durable rubber sole underfoot. Plus, wavy design lines and iconic plastic accents celebrate bold style. ",
+
+        p_two:"Product details:-Reflective design elements Not intended for use as personal protective equipment (PPE) Colour Shown: Black/White/Laser Fuchsia Style: CD0609-025",
+              p_three:' ⭐ 3.6 ',
+              p_four:'Originally designed for performance running, a Max Air unit provides lightweight cushioning that lasts.',
+              p_five:'',
+              p_one:"In Stock" ,
+        
     },
     {
         imgURL: shoe4,
         name: "Nike Air Jordan-01",
         price: "$200.20",
-        rate:'4.2'
+        rate:'4.2',
+        discount:"20% off",    Data: "Who says kids don't deserve big cushioning? Not us. Get a taste of our legendary Tuned Air technology with the Nike Air Jordan-01. From the school playground to your back garden, these comfy kicks are ready to play with breathable mesh fabric up top and a durable rubber sole underfoot. Plus, wavy design lines and iconic plastic accents celebrate bold style. ",
+
+        p_two:"Product details:-Reflective design elements Not intended for use as personal protective equipment (PPE) Colour Shown: Black/White/Laser Fuchsia Style: CD0609-025",
+              p_three:' ⭐ 4.2 ',
+              p_four:'Originally designed for performance running, a Max Air unit provides lightweight cushioning that lasts.',
+              p_five:'',
+              p_one:"In Stock" ,
+              afterDiscount:"$180.1",
     },
   
 
@@ -54,8 +81,15 @@ export const products = [
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/8ea34718-7299-46d4-9765-21952852f3de/jordan-spizike-low-shoes-pBZk7c.png",
         name:"Jorden Spizike Low ",
         price:"$129.32",
-        rate:'4.5'
+        rate:'4.5',
+        discount:"20% off",
+        Data:"We prioritise comfort, especially for our growing athletes. Made with 20% recycled content by weight, you can take these lightweight, breathable running shoes from all-day play to any-time wear and even athletics training. Lightweight, breathable and cushioned for growing feet, the race starts now.",
+        p_two:"Product details:-Reflective design elements Not intended for use as personal protective equipment (PPE) Colour Shown: Black/White/Laser Fuchsia Style: CD0609-025",
+        p_three:' ⭐ 4.5 ',
+        p_one:"In Stock" ,
+        afterDiscount:"$108.772",
     }
+
 
 ];
 
@@ -65,21 +99,42 @@ export const originproducts=[
         name:" Nike Air Force 1 '07 ",
         price:"$110.94",
         rate:'4.3',
-        discount:"20% off"
+        discount:"20% off",
+        Data: "The radiance lives on in the Nike Air Force 1 , the b-ball icon that puts a fresh spin on what you know best: crisp leather, bold colours and the perfect amount of flash to make you shine. A subtle platform gives you just the right amount of height ",
+
+        p_two:`Product details:- Low-cut, padded collar looks sleek and feels comfortable.
+        Rubber outsole with classic hoops pivot circle adds durability, traction and heritage styleColour Shown: Sail/University Red/Chlorophyll/Sail
+        Style: FZ3775-133 `,
+              p_three:' ⭐ 4.3 ',
+              p_one:"In Stock" ,
     },
     {
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/7231a782-35fb-4bce-b940-04748c42914c/air-jordan-1-mid-se-older-shoes-ZMGf1Z.png",
         name:"Air Jorden 1 Mid SE ",
         price:"$104.72",
         rate:'3.6',
-        discount:"20% off"
+        discount:"20% off",
+        discount:"20% off",    Data: "Who says kids don't deserve big cushioning? Not us. Get a taste of our legendary Tuned Air technology with the Nike Air Jordan. From the school playground to your back garden, these comfy kicks are ready to play with breathable mesh fabric up top and a durable rubber sole underfoot. Plus, wavy design lines and iconic plastic accents celebrate bold style. ",
+
+        p_two:"Product details:-Reflective design elements Not intended for use as personal protective equipment (PPE) Colour Shown: Black/White/Laser Fuchsia Style: CD0609-025",
+              p_three:' ⭐ 3.6 ',
+              p_four:'Originally designed for performance running, a Max Air unit provides lightweight cushioning that lasts.',
+              p_five:'',
+              p_one:"In Stock" ,
+        
     },
     {
         imgURL: shoe4,
         name: "Nike Air Jordan-01",
         price: "$200.20",
         rate:'4.2',
-        discount:"20% off"
+        discount:"20% off",    Data: "Who says kids don't deserve big cushioning? Not us. Get a taste of our legendary Tuned Air technology with the Nike Air Jordan-01. From the school playground to your back garden, these comfy kicks are ready to play with breathable mesh fabric up top and a durable rubber sole underfoot. Plus, wavy design lines and iconic plastic accents celebrate bold style. ",
+
+        p_two:"Product details:-Reflective design elements Not intended for use as personal protective equipment (PPE) Colour Shown: Black/White/Laser Fuchsia Style: CD0609-025",
+              p_three:' ⭐ 4.2 ',
+              p_four:'Originally designed for performance running, a Max Air unit provides lightweight cushioning that lasts.',
+              p_five:'',
+              p_one:"In Stock" ,
     },
   
 
@@ -88,7 +143,11 @@ export const originproducts=[
         name:"Jorden Spizike Low ",
         price:"$129.32",
         rate:'4.5',
-        discount:"20% off"
+        discount:"20% off",
+        Data:"We prioritise comfort, especially for our growing athletes. Made with 20% recycled content by weight, you can take these lightweight, breathable running shoes from all-day play to any-time wear and even athletics training. Lightweight, breathable and cushioned for growing feet, the race starts now.",
+        p_two:"Product details:-Reflective design elements Not intended for use as personal protective equipment (PPE) Colour Shown: Black/White/Laser Fuchsia Style: CD0609-025",
+        p_three:' ⭐ 4.5 ',
+        p_one:"In Stock" 
     }
 
 
@@ -198,7 +257,7 @@ export const allproducts = [
         Data:"We prioritise comfort, especially for our growing athletes. Made with 20% recycled content by weight, you can take these lightweight, breathable running shoes from all-day play to any-time wear and even athletics training. Lightweight, breathable and cushioned for growing feet, the race starts now.",
         p_two:"Product details:-Reflective design elements Not intended for use as personal protective equipment (PPE) Colour Shown: Black/White/Laser Fuchsia Style: CD0609-025",
         p_three:' ⭐ 3.2 ',
-        p_one:"In Stock" 
+        p_one:"In Stock" ,
 
     },
     {
@@ -218,6 +277,10 @@ export const allproducts = [
         price: "$220.20",
         rate:'2.9',
         discount:"20% off",
+        Data:"We prioritise comfort, especially for our growing athletes. Made with 20% recycled content by weight, you can take these lightweight, breathable running shoes from all-day play to any-time wear and even athletics training. Lightweight, breathable and cushioned for growing feet, the race starts now.",
+        p_two:"Product details:-Reflective design elements Not intended for use as personal protective equipment (PPE) Colour Shown: Black/White/Laser Fuchsia Style: CD0609-025",
+        p_three:' ⭐ 2.9 ',
+        p_one:'out of stock ',
         
     },
     {
@@ -225,8 +288,11 @@ export const allproducts = [
         name:"Nike p-6000 Premium ",
         price:"$123.2",
         rate:'3.6',
-        discount:"20% off"
-        
+        discount:"20% off",
+        Data:"  You never know where self-belief might take you. Inspired by the texture and colours of a passport, and the stamps MJ collected on his world tours, this AJ1 is a fresh reminder to dream big. Keep the included luggage tag as an adornment for your shoes (or your suitcase).",
+        p_two:"Product details:-Nike p-6000 Premium absorbs impact for cushioning with every step. Solid rubber outsole provides durability and traction. Colour Shown: Armoury Navy/Pale Ivory/Sport Red/Metallic Gold Style: FN1353-400",
+        p_three:' ⭐ 3.6 ',
+        p_one:"In Stock ",
     },
     {
         imgURL:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/49d6a0ba-d3c1-4d5f-b93f-b09af0c662ef/air-force-1-07-shoes-587rld.png",

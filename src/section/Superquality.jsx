@@ -20,11 +20,12 @@ const SuperQuality = () => {
           quality, innovation, and a touch of elegance.
         </p>
         <p className='mt-6 lg:max-w-lg font-mono'>
-          Our dedication to detail and excellence ensures your satisfaction
+        You can also find other Nike products.
         </p>
-        <div className='mt-11'>
+      <a href="https://www.nike.com/in/w/sale-3yaep"> <div className='mt-11'>
           <Btn label='View details' />
-        </div>
+        </div></a>
+       
       </div>
 
       <div className='flex-1 flex justify-center items-center'>

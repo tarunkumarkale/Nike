@@ -36,7 +36,7 @@ const Hero = () => {
           your active life.
         </p>
 
-        <Btn label='Shop now' iconURL={arrowRight} />
+       <a href="https://www.nike.com/in/w/mens-shoes-nik1zy7ok"><Btn label='Shop now' iconURL={arrowRight} /></a> 
 
         <div className='flex justify-start items-start flex-wrap w-full mt-20 gap-16'>
           {statistics.map((stat, index) => (

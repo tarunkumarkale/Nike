@@ -30,7 +30,7 @@ const ViewDet = ({ closePopup, productsss }) => {
   return (
     <div>
       <div className="fixed inset-0 flex justify-center bg-gray-500 bg-opacity-75 box-border m-0 max-sm:h-[94%] z-10">
-        <div className="bg-white p-1 w-[80%] h-[80%] rounded-lg max-sm:h-[92%]">
+        <div className="bg-white p-1 w-[80%] h-[85%] rounded-lg max-sm:h-[100%]">
           <button
             onClick={closePopup}
             className="text-lg font-20 py-2 px-4 rounded mb-2 hover:bg-black hover:text-white max-md:py-0"
@@ -44,7 +44,7 @@ const ViewDet = ({ closePopup, productsss }) => {
               <img
                 src={productsss.imgURL}
                 alt={productsss.name}
-                className="w-full h-[70%] rounded-lg max-sm:w-full"
+                className="w-full h-[68%] rounded-lg max-sm:w-full"
               />
             </div>
    
@@ -69,7 +69,7 @@ const ViewDet = ({ closePopup, productsss }) => {
 
                 </div>
                 <div className="flex justify-center mt-2">
-                <p className="text-sm">({productsss.p_three})</p></div> 
+                <p className="border-black-1 w-56 text-center bg-slate-100 rounded-xl text-black">({productsss.p_three})</p></div> 
              
               </div>
             </div>
