@@ -3,10 +3,12 @@ import { star } from "../assets/icons";
 import  {Inside}  from "../section";
 
 import ViewDet from "../section/ViewDet";
-const PopularProductCard = ({ imgURL, name, price,rate,discount,passs,productsss, onProductClick,product,checker}) => {
+import { AllBUYDetails } from "../constants/index2";
+const PopularProductCard = ({ imgURL, name, price,rate,discount,passs,productsss, onProductClick,product,checker,id,testertube}) => {
   const[firs,setfirs]=useState(false)
   
 
+console.log(productsss.discount)
 const handlechange=()=>{
   setfirs(pre=>!pre)
   // onProductClick(productsss);
@@ -40,13 +42,11 @@ const handlechange=()=>{
       
 
 
-{/* 
-        {/* <button onClick={()=>passs()} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> *
+ <button onClick={()=>passs(productsss)} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> 
   Buy now   
-</button>  */}
-    <button onClick={()=>passs()} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> *
-  Buy now   
-</button> 
+</button>  
+
+   
 
 <button onClick={handlechange}  className=" mt-2 bg-slate-500 hover:bg-slate-900 text-white font-bold py-2 px-4 rounded" >View Details</button> 
 
@@ -54,6 +54,8 @@ const handlechange=()=>{
    
 
    {firs?<ViewDet  productsss={productsss}  closePopup={handlechange}   /> :null}
+   {/* {firs?<Inside  productsss={productsss}  closePopup={handlechange}   /> :null} */}
+
  
     </div>
   );

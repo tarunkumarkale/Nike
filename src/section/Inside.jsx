@@ -5,24 +5,24 @@ const Inside = ({ closePopup ,product,productsss,rate,Name,price,discount,afterD
 
 const[mobilesize,setmobile]=useState(false)
 
-
+console.log(Name)
 
 
 const updateScreenSize = () => {
   setmobile(window.innerWidth < 641); // Adjust breakpoint as needed
 };
 
-useEffect(()=>{
-updateScreenSize()
-const final=()=>{
-  updateScreenSize()
-}
-window.addEventListener('resize',final)
+// useEffect(()=>{
+// updateScreenSize()
+// const final=()=>{
+//   updateScreenSize()
+// }
+// window.addEventListener('resize',final)
 
-return () => {
-  window.removeEventListener('resize', final);
-};
-},[])
+// return () => {
+//   window.removeEventListener('resize', final);
+// };
+// },[])
 
 const numbers = [7, 8, 9, 10, 11, 12];
 
@@ -34,26 +34,31 @@ setdefualt(arg)
 console.log(arg)
 }
 
-useEffect(()=>{
-  if(defualt===7)
-  {
-    setfinal(afterDiscount+2)
-  }else if (defualt===8){
-    setfinal(afterDiscount+5)
+useEffect(() => {
+  const afterDiscountNumber = parseFloat(afterDiscount);
+  if (!isNaN(afterDiscountNumber)) {
+    let finalValue;
+    if (defualt === 7) {
+      finalValue = afterDiscountNumber + 2.02;
+    } else if (defualt === 8) {
+      finalValue = afterDiscountNumber + 5.03;
+    } else if (defualt === 9) {
+      finalValue = afterDiscountNumber + 7.89;
+    } else if (defualt === 10) {
+      finalValue = afterDiscountNumber + 10.89;
+    } else if (defualt === 11) {
+      finalValue = afterDiscountNumber + 12.89;
+    } else if (defualt === 12) {
+      finalValue = afterDiscountNumber + 15.89;
+    }
+
+    setfinal(isNaN(finalValue) ? 'N/A' : finalValue.toFixed(2));
+  } else {
+    console.log("afterDiscount is NaN");
+    setfinal('N/A');
   }
-  else if (defualt===9){
-    setfinal(afterDiscount+7)
-  }
-  else if (defualt===10){
-    setfinal(afterDiscount+10)
-  }
-  else if (defualt===11){
-    setfinal(afterDiscount+12)
-  }
-  else if(defualt===12){
-    setfinal(afterDiscount+15)
-  }
-},[])
+}, [defualt, afterDiscount]);
+
 
 
   return (
@@ -77,26 +82,7 @@ useEffect(()=>{
               <h1 className="text-center font-semibold"> 1. SELECT SIZE (Size- UK/India)</h1>
 
               <div className="flex flex-row  flex-wrap justify-center  ">
-                {/* <button  onClick={()=>Size()}  className=" border-2 border-gray-300 hover:border-black text-black font-bold py-2 px-4 rounded m-1 w-12 text-center flex items-center justify-center">
-                  7
-                </button>
-                <button   onClick={()=>{}} className=" border-2 border-gray-300 hover:border-black text-black font-bold py-2 px-4 rounded m-1 w-12 text-center flex items-center justify-center">
-                  8
-                </button>
-                <button onClick={()=>{}}  className=" border-2 border-gray-300 hover:border-black text-black font-bold py-2 px-4 rounded m-1 w-12 text-center flex items-center justify-center">
-                  9
-                </button>
-                <button  onClick={()=>{}} className=" border-2 border-gray-300 hover:border-black text-black font-bold py-2 px-4 rounded m-1 w-12 text-center flex items-center justify-center">
-                  10
-                </button>
-                <button  onClick={()=>{}} className=" border-2 border-gray-300 hover:border-black text-black font-bold py-2 px-4 rounded m-1 w-12 text-center flex items-center justify-center">
-                  11
-                </button>
-               
-                <button  onClick={()=>{}} className=" border-2 border-gray-300 hover:border-black text-black font-bold py-2 px-4 rounded m-1 w-12 text-center flex items-center justify-center">
-                  12
-                </button> */}
-               
+             
 
                 {numbers.map((number, index) => (
       <button
@@ -148,12 +134,12 @@ useEffect(()=>{
             </tr>
             <tr className="bg-white dark:bg-gray-800">
                 <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    Total {id}
+                    Total 
                 </th>
              
                
                 <td className="px-6 py-4 font-extrabold flex justify-end">
-                    {final}
+                {final} 
                 </td>
             </tr>
         </tbody>

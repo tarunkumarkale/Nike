@@ -3,8 +3,7 @@ import { facebook, instagram, shieldTick, support, truckFast, twitter } from "..
 import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
 
 export const AllBUYDetails = [
-  
-    {
+   {
         // imgURL: shoe5,
 imgURL:"https://static.nike.com/a/images/t_prod_sc/w_960,c_limit,f_auto/hvbkjjbqtse3rtkapmsb/air-jordan-10-city-series-court-green-release-date.jpg",
         Name: "Nike Air Jordan-X Court Green",

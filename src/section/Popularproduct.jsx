@@ -5,7 +5,7 @@ import { Inside } from ".";
 import { AllBUYDetails } from "../constants/index2";
 
 
-const PopularProducts = ({pass,checking}) => {
+const PopularProducts = ({pass}) => {
   const [first, setFirst] = useState('');
   const [listen, setListen] = useState(products);
   const [afterBtn, setAfterBtn] = useState(originproducts);
@@ -41,7 +41,7 @@ const [clickedProduct, setClickedProduct] = useState(null);
 const handleProductClick = (product) => {
 
   console.log("Clicked product:", product);
-setClickedProduct(product)
+
  
   
 };
@@ -74,17 +74,16 @@ setClickedProduct(product)
       </div>
  
       <div className='mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-14'>
-         {listen.map((product) => (
+         {listen.map((product,index) => (
           <PopularProductCard key={product.name} 
           
          {...product} 
            productsss={product}
           onProductClick={handleProductClick}
-          checker={checking}
            passs={pass} />
         ))} 
 
-        {clickedProduct && <PopularProductCard product={clickedProduct} />}
+        {clickedProduct && <PopularProductCard product={clickedProduct}  />}
       </div>
     </section>
   );

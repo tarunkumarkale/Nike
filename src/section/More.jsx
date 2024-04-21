@@ -94,23 +94,23 @@ const More = () => {
     const [first, setFirst] = useState(false);
     const [Forbuy, setForbuy] = useState(AllBUYDetails);
     const [Allinside, setAllinside] = useState(null);
-    const [testBuyNow, settestBuyNow] = useState(null);
+    const [testBuyNow, settestBuyNow] = useState([]);
 
     const handlechange = (arg) => {
         
         setFirst(prev => !prev);
-        console.log(AllBUYDetails[0].id);
-        // Ensure Allinside is not null before filtering
+        console.log(arg.rate)
+    settestBuyNow([arg])
     };
     
     return (
         <div>
             {first ? 
-                Forbuy.map((Element, index) => (
+                testBuyNow.map((Element, index) => (
                     <Inside 
                         key={index}  
                         id={index} 
-                        Name={Element.Name} 
+                        Name={Element.name} 
                         price={Element.price} 
                         discount={Element.discount} 
                         afterDiscount={Element.afterDiscount} 
