@@ -17,6 +17,7 @@ const PopularProducts = ({pass}) => {
     
     if (final === "") {
       setFirst(null);
+         
     }
     
     let search = allListen.filter((shoesname) => (
