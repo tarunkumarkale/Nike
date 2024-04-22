@@ -167,7 +167,7 @@ export const allproducts = [
         
         rate:'4.2',
         discount:"14% off",
-        afterDiscount:"180.772",
+        afterDiscount:"$180.772",
         Data:"The Air Jordan X debuted the year before MJ returned to the game to defeat Seattle in the 1996 finals. Now, 12 years after the storied franchise packed up for their new home in Oklahoma City, the Air Jordan X honours famed NBA cities, including Seattle, as part of its 'City Series' of retro colourways. Seattle is rich with hoops history, and this Air Jordan X stands out on the court. The bold, tumbled white-leather upper gives some breathing room for that shock of green and yellow on the collar and outsole.",
         p_three:' ⭐ 4.2 ',
         p_one:'out of stock ',
