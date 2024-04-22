@@ -21,10 +21,15 @@ const Nav = () => {
               </li>
             ))
           }
+          {/* <li className='font-mono leading-normal text-lg text-slate-gray cursor-pointer '> Register/Login</li> */}
         </ul>
         <div className='hidden max-lg:block' >
         {/*   but here i want  laptop screen size hamburger menu nahi dekhe jab me screen size ko chota karuga tabh dkhe    hidden max-lg:block    first initally hidden rahega and then screen size chote pe block means show karega*/}
           <img src={hamburger} width={25} height={25}   alt="hamburger menu" />
+        </div>
+        <div className='max-lg:hidden'>
+          <a href="#" className=" leading-normal text-lg text-slate-gray font-bold active:text-green-800">Register</a>/
+          <a href="#" className="font-bold leading-normal text-lg text-slate-gray active:text-green-800">Login</a>
         </div>
       </nav>
     </header>
