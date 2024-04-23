@@ -25,14 +25,14 @@ const handlechange=()=>{
 
 
   return (
-    <div className='flex flex-1 flex-col w-full max-sm:w-full'>
+    <div className='flex flex-1 flex-col w-full max-sm:w-full shadow-xl '>
       <img src={imgURL} alt={name} className='w-[282px] h-[282px]' />
       <div className='mt-8 flex justify-start gap-2.5'>
         <img src={star} alt='rating icon' width={24} height={24} />
         <p className='font-montserrat text-xl leading-normal text-slate-gray'>
           ({rate})
         </p>
-      </div>
+      </div> 
       <h3 className='mt-2 text-2xl leading-normal font-semibold font-palanquin'>
      {name} 
       </h3>
@@ -61,4 +61,4 @@ const handlechange=()=>{
   );
 };
 
-export default PopularProductCard;
+export default PopularProductCard

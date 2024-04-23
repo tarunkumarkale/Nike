@@ -1,0 +1,52 @@
+
+
+
+
+
+/* Define the keyframes for the animation */
+@keyframes updown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Move back down */
+    }
+  }
+  
+  /* Apply the animation to the element with class "shoes" */
+  .shoes {
+    animation: updown 2s ease-in-out infinite; /* Adjust duration and timing function as needed */
+  }
+  
+/* index.css */
+
+/* Define the class with responsive styles */
+.resp {
+    width: 100%; /* Default width */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center the content */
+    
+  }
+  
+  /* Apply responsive styles using media queries */
+  @media (min-width: 580px) {
+    .resp {
+      width: auto; /* Set width to auto after 580px */
+      justify-content: flex-end; /* Reset justify-content to start position */
+      align-items: center;
+    }
+  
+  }
+
+  .check{
+    width: 100%;
+  }
+  
+  @media (min-width: 400px) {
+  .check{
+    width:auto
+       }
+       }
