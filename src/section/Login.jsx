@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import white from "../Img/white.jpg"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./index.css"
+import { useFirebase } from "../Firebase/Context";
 const Login = () => {
+
+  //
+  
+
+ let first= useFirebase()
+
+ console.log(first)
+const[email,setemail]=useState()
+const[pass,setpass]=useState()
+
+const FunCall=(e)=>{
+
+  if(first.createSignIn(email,pass))  toast("You have login")
+ 
+  setemail("")
+  setpass("")
+  e.preventDefault()
+}
+
   return (
     <div className="container w-full h-[80%]">
+      <ToastContainer />
       <div className="border-spacing-1  w-[80%]   mx-[10%]  flex rounded-tl-full relative "  style={{ backgroundColor: 'rgba(179, 225, 64, 1)' }}>
         <div className="w-[50%] h-[80%] hidden sm:block  md:block ">
         <div className="shoes">
@@ -27,7 +50,7 @@ const Login = () => {
             <input
               type="email"
               id="email"
-              name="email"
+              name="email"   onChange={(e)=>setemail(e.target.value)}
               className="w-full mt-1  p-2 block border-spacing-2 border-gray-600 rounded-md focus:outline-none focus:border-green-400"
               placeholder="Enter your email"
             />
@@ -39,14 +62,14 @@ const Login = () => {
             <input
               type="password"
               id="password"
-              name="password"
+              name="password"  onChange={(e)=>setpass(e.target.value)}
               className="  w-full mt-1 p-2 block border-spacing-2 border-gray-700 rounded-md focus:outline-none focus:border-green-400"
               placeholder="Enter your password"
             />
           </div>
           <button
             type="submit"
-            className="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600 "
+            className="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 focus:outline-none focus:bg-green-600 " onClick={FunCall}
           >
             Login
           </button>

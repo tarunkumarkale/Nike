@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { FaRegCircleXmark } from "react-icons/fa6";
+import { ToastContainer, toast,Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; 
 import "./";
+import { useFirebase } from "../Firebase/Context";
 const Inside = ({
   closePopup,
   product,
@@ -13,14 +16,30 @@ const Inside = ({
   id,
 }) => {
   const [mobilesize, setmobile] = useState(false);
-
+let text=useFirebase()
   console.log(Name);
 
   const updateScreenSize = () => {
     setmobile(window.innerWidth < 641); // Adjust breakpoint as needed
   };
 
+ 
+const Buy=()=>{
+if(!text.start) alert("you have not sign up") 
 
+toast.success(' Buy confirm', {
+  position: "top-center",
+  autoClose: 5000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+  theme: "colored",
+  transition: Bounce,
+  });
+
+}
   const numbers = [7, 8, 9, 10, 11, 12];
 
   const [defualt, setdefualt] = useState(7);
@@ -62,6 +81,19 @@ const Inside = ({
 
   return (
     <div>
+    <ToastContainer
+position="top-center"
+autoClose={5000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="colored"
+
+/>
       <div className="fixed inset-0 flex  justify-center bg-gray-500 bg-opacity-75 box-border m-0 max-sm:h-[94%] z-10   ">
         <div className="bg-white p-1 w-[80%] h-[91%]  rounded-lg max-sm:h-[92%]    ">
           <button
@@ -164,7 +196,7 @@ const Inside = ({
               </div>
 
               <div className="flex  justify-center gap-4 items-center space-x-5 mt-3 ">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"       onClick={Buy}        >
                   buy
                 </button>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
