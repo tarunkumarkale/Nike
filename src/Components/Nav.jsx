@@ -4,8 +4,15 @@ import { navLinks } from "../constants";
 
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useFirebase } from '../Firebase/Context';
 
 const Nav = () => {
+
+
+  let text=useFirebase()
+
+
+  
   return (
     <header className='padding-x py-8 absolute z-10 w-full'>
       <nav className='flex justify-between items-center max-container'>
