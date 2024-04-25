@@ -1,26 +1,25 @@
-import { createContext } from "react";
+import React, { createContext, useContext } from 'react';
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-const FirebaseContext=createContext(null);
+   import { app } from "./FirebaseFirestore"
+
+const FirebaseContext = createContext(null);
 
 export const useFirebase = () => useContext(FirebaseContext);
 
-export const FirebaseProvider=(props)=>{
 
-const SignUp=()=>{
-    const auth = getAuth();
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => console.log(userCredential))
-      .catch((error) => {
-     console.log(error)
-      });
-}
-   
-    
-    
+export const FirebaseProvider = ({ children }) => {
+  const auth = getAuth(app);
+const createSignUp=(email,password)=>{return createUserWithEmailAndPassword(auth, email, password)}
 
-    return(
-        <FirebaseContext.Provider value={SignUp}>
-            {props.children}
-        </FirebaseContext.Provider>
-    )
-}
+
+
+
+
+
+
+  return (
+    <FirebaseContext.Provider value={{ createSignUp}}>
+      {children}
+    </FirebaseContext.Provider>
+  );
+};

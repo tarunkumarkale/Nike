@@ -1,7 +1,9 @@
 import { headerLogo } from '../assets/images';
 import { hamburger } from '../assets/icons';
 import { navLinks } from "../constants";
+
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
@@ -28,8 +30,8 @@ const Nav = () => {
           <img src={hamburger} width={25} height={25}   alt="hamburger menu" />
         </div>
         <div className='max-lg:hidden'>
-          <a href="#" className=" leading-normal text-lg text-slate-gray font-bold active:text-green-800">Register</a>/
-          <a href="#" className="font-bold leading-normal text-lg text-slate-gray active:text-green-800">Login</a>
+          <Link to="/Signup" className="font-bold leading-normal text-lg text-slate-gray active:text-green-800">Register</Link>/
+          <Link to="/Login" className="font-bold leading-normal text-lg text-slate-gray active:text-green-800">Login</Link>
         </div>
       </nav>
     </header>
